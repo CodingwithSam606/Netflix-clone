@@ -48,6 +48,31 @@ body.home-page{
     list-style: none;
 }
 
+footer {
+  background-color: #141414; /* Netflix dark background */
+  color: #b3b3b3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e50914; /* Netflix red hover */
+  text-decoration: underline;
+}
+
 .list-bottom {
     width: 25%;
     margin-top: 10px;
