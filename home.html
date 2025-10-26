@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix - Home</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="icon" href="img/logo.png" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- NOTE: body has class "home-page" to scope all home styles and avoid touching login styles -->
+<body class="home-page">
+  <!-- Navbar -->
+  <header class="site-navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <img src="img/Netflix-Logo.png" alt="Netflix Logo" class="netflix-logo">
+      </div>
+
+      <div class="navbar-center">
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+      </div>
+
+      <div class="navbar-right">
+        <div class="search-wrap">
+          <input type="text" id="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </div>
+        <button id="logout-btn" class="logout-btn">Logout</button>
+        <img src="img/account.png" alt="User" class="profile-pic">
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Stranger Things</h1>
+      <p class="hero-description">
+        When a young boy vanishes, a small town uncovers a mystery involving secret experiments and supernatural forces.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn play"><i class="fas fa-play"></i> Play</button>
+        <button class="btn info"><i class="fas fa-info-circle"></i> More Info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movie Rows -->
+  <main class="rows">
+    <section class="movie-section">
+      <h2>Trending Now</h2>
+      <div class="movie-row">
+        <div class="movie"><img src="img/hollywood/img1.avif" alt="Movie 1"></div>
+        <div class="movie"><img src="img/hollywood/img10.jpg" alt="Movie 2"></div>
+        <div class="movie"><img src="img/hollywood/img12.jpg" alt="Movie 3"></div>
+        <div class="movie"><img src="img/hollywood/img13.jpg" alt="Movie 4"></div>
+        <div class="movie"><img src="img/hollywood/img14.jpg" alt="Movie 5"></div>
+        <div class="movie"><img src="img/hollywood/img7.jpg" alt="Movie 6"></div>
+        <div class="movie"><img src="img/hollywood/img8.jpg" alt="Movie 7"></div>
+        <div class="movie"><img src="img/hollywood/img9.jpg" alt="Movie 8"></div>
+        <div class="movie"><img src="img/trending/img9.jpeg" alt="Movie 9"></div>
+        <div class="movie"><img src="img/trending/img8.jpeg" alt="Movie 10"></div>
+        <div class="movie"><img src="img/trending/img7.webp" alt="Movie 11"></div>
+      </div>
+    </section>
+
+    <section class="movie-section">
+      <h2>Continue Watching</h2>
+      <div class="movie-row">
+        <div class="movie"><img src="img/hollywood/img11.jpg" alt="Movie 6"></div>
+        <div class="movie"><img src="img/hollywood/img15.jpg" alt="Movie 7"></div>
+        <div class="movie"><img src="img/hollywood/img16.jpg" alt="Movie 8"></div>
+        <div class="movie"><img src="img/hollywood/img17.jpg" alt="Movie 9"></div>
+        <div class="movie"><img src="img/hollywood/img18.jpeg" alt="Movie 10"></div>
+        <div class="movie"><img src="img/trending/img1.jpeg" alt="Movie 1"></div>
+        <div class="movie"><img src="img/trending/img10.jpeg" alt="Movie 2"></div>
+        <div class="movie"><img src="img/trending/img11.jpg" alt="Movie 3"></div>
+      </div>
+    </section>
+
+    <section class="movie-section">
+      <h2>Top Picks for You</h2>
+      <div class="movie-row">
+        <div class="movie"><img src="img/hollywood/img2.jpg" alt="Movie 11"></div>
+        <div class="movie"><img src="img/hollywood/img3.jpg" alt="Movie 12"></div>
+        <div class="movie"><img src="img/hollywood/img4.png" alt="Movie 13"></div>
+        <div class="movie"><img src="img/hollywood/img5.jpg" alt="Movie 14"></div>
+        <div class="movie"><img src="img/hollywood/img6.jpg" alt="Movie 15"></div>
+        <div class="movie"><img src="img/trending/img12.jpg" alt="Movie 4"></div>
+        <div class="movie"><img src="img/trending/img15.webp" alt="Movie 5"></div>
+        <div class="movie"><img src="img/trending/img16.jpg" alt="Movie 6"></div>
+        <div class="movie"><img src="img/trending/img2.webp" alt="Movie 7"></div>
+        <div class="movie"><img src="img/trending/img3.webp" alt="Movie 8"></div>
+        <div class="movie"><img src="img/trending/img4.jpg" alt="Movie 9"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="home-footer">
+    <p>© 2025 Netflix Clone — For Practice Only</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

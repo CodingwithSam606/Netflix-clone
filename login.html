@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix - Login</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="icon" href="img/logo.png" />
+</head>
+
+<body>
+  <div class="upper">
+    <div class="logo">
+      <a href="#">
+        <img src="img/Netflix-Logo.png" class="img-logo" />
+      </a>
+    </div>
+
+    <div class="login-div">
+      <form class="login" id="loginForm">
+        <h1>Sign In</h1>
+
+        <!-- Email Input -->
+        <div class="input-text">
+          <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" />
+          <p id="warningEmail" style="display:none; color: #e50914; font-size: 14px; margin-top: 5px;">
+            Please enter a valid email or phone.
+          </p>
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-text">
+          <input type="password" id="inputPassword" name="password" placeholder="Password" />
+          <p id="warningPassword" style="display:none; color: #e50914; font-size: 14px; margin-top: 5px;">
+            Password must be 4–60 characters.
+          </p>
+        </div>
+
+        <!-- Sign In Button -->
+        <div>
+          <button class="signin-button" type="button" id="loginBtn">Sign In</button>
+        </div>
+
+        <!-- Remember / Help -->
+        <div class="remember-flex">
+          <div>
+            <input type="checkbox" />
+            <label class="color_text">Remember me</label>
+          </div>
+          <div class="help">
+            <a class="color_text" href="#">Need help?</a>
+          </div>
+        </div>
+
+        <!-- Facebook login (optional) -->
+        <div class="login-face">
+          <img src="img/fb-icon.png" height="20" />
+          <a href="#" class="color_link log_face">Login with Facebook</a>
+        </div>
+
+        <!-- New member -->
+        <div class="new-members">
+          New to Netflix?
+          <a href="signup.html" class="signup-link">Sign up now</a>.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="bottom">
+    <div class="bottom-width">
+      Questions? Call
+      <a href="tel:1-844-542-4813" class="tel-link">1-844-542-4813</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
