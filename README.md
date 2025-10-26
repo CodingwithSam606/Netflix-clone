@@ -47,8 +47,8 @@ CSS3 (Flexbox & Media Queries)
 JavaScript (Vanilla)
 
 🖼️ Images
-<img width="1337" height="688" alt="Screenshot (145)" src="https://github.com/user-attachments/assets/f2962ebc-1c11-4da3-9444-c880d250d2a3" />
 <img width="1330" height="691" alt="Screenshot (144)" src="https://github.com/user-attachments/assets/1d6872f3-be11-416d-8dd4-bf7017a079e7" />
+<img width="1337" height="688" alt="Screenshot (145)" src="https://github.com/user-attachments/assets/f2962ebc-1c11-4da3-9444-c880d250d2a3" />
 
 
 All images used in the /img folder are placeholders for demonstration purposes only and are not official Netflix assets.
@@ -57,7 +57,7 @@ All images used in the /img folder are placeholders for demonstration purposes o
 
 Download or clone this repository:
 
-git clone https://github.com/yourusername/netflix-clone.git
+git clone [https://github.com/yourusername/netflix-clone.git](https://github.com/CodingwithSam606/Netflix-clone.git)
 
 
 Open the folder in your code editor.
@@ -78,4 +78,4 @@ Junior Web Developer
 Frontend Developer | HTML • CSS • JavaScript • React
 📧 Email: samasalu10@gmail.com
 
-]
+
