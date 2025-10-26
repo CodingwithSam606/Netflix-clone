@@ -54,14 +54,16 @@ function handleSignupPage() {
       return;
     }
 
-    // Save details in localStorage
-    localStorage.setItem("netflixUserName", name);
-    localStorage.setItem("netflixUserEmail", email);
-    localStorage.setItem("netflixUserPassword", password);
-    localStorage.setItem("isLoggedIn", "true"); // automatically log in
+    // ⚠️ Practice only — no real data stored
+    alert(
+      `Welcome ${name}! This is a practice project — no real data is saved.\n\nYou'll be redirected to the Home page now.`
+    );
 
-    alert(`Welcome ${name}! Your account has been created successfully.`);
-    window.location.href = "home.html"; // redirect directly to home
+    // Just mark user as logged in (fake session)
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("netflixUserName", name);
+
+    window.location.href = "home.html";
   });
 }
 
@@ -79,21 +81,16 @@ function handleLoginPage() {
     const email = inputEmail.value.trim();
     const password = inputPassword.value.trim();
 
-    const savedEmail = localStorage.getItem("netflixUserEmail");
-    const savedPassword = localStorage.getItem("netflixUserPassword");
-
     if (!email || !password) {
       alert("Please fill in all fields!");
       return;
     }
 
-    if (email === savedEmail && password === savedPassword) {
-      localStorage.setItem("isLoggedIn", "true");
-      alert("Login successful!");
-      window.location.href = "home.html";
-    } else {
-      alert("Invalid email or password!");
-    }
+    // ⚠️ Demo only — skips real validation
+    alert("Login successful! (Demo only — no real authentication)");
+    localStorage.setItem("isLoggedIn", "true");
+
+    window.location.href = "home.html";
   });
 }
 
@@ -103,7 +100,7 @@ function handleLoginPage() {
 function handleHomePage() {
   const profilePic = document.querySelector(".profile-pic");
   const logoutBtn = document.getElementById("logout-btn");
-  const userName = localStorage.getItem("netflixUserName");
+  const userName = localStorage.getItem("netflixUserName") || "Guest";
 
   // Redirect if user not logged in
   if (!localStorage.getItem("isLoggedIn")) {
@@ -112,7 +109,7 @@ function handleHomePage() {
   }
 
   // Display greeting beside profile icon
-  if (profilePic && userName) {
+  if (profilePic) {
     const greeting = document.createElement("span");
     greeting.textContent = `Hello, ${userName}`;
     greeting.classList.add("user-greeting");
@@ -125,7 +122,7 @@ function handleHomePage() {
   // Logout functionality
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
-      localStorage.removeItem("isLoggedIn");
+      localStorage.clear();
       window.location.href = "login.html";
     });
   }
