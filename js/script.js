@@ -135,3 +135,14 @@ function handleHomePage() {
     });
   });
 }
+
+// =========================================
+// UNIVERSAL NAVIGATION HANDLER
+// =========================================
+document.addEventListener("click", (e) => {
+  if (e.target.matches(".back-home")) {
+    e.preventDefault();
+    window.location.href = "home.html";
+  }
+});
+
