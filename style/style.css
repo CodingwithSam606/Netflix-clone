@@ -1,60 +1,68 @@
 /* -------------------- LOGIN PAGE STYLES -------------------- */
 body {
-    margin: 0;
-    padding: 0;
-    background: url("../img/background.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body.home-page{
-  background: #000;
+body.home-page {
+  background: #141414;
 }
 
 .img-logo {
-    height: 94px;
-    margin-left: 45px;
+  height: 90px;
+  margin-left: 45px;
 }
 
 .upper {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding-bottom: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.85) 100%);
+  padding-bottom: 100px;
 }
 
 .bottom {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #757575;
-    padding-bottom: 10px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #808080;
+  padding-bottom: 10px;
 }
 
 .bottom-width {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .bottom-flex {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px 0 0 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0 0 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .bottom-flex li {
-    list-style: none;
+  list-style: none;
+}
+
+.list-bottom {
+  width: 25%;
+  margin-top: 10px;
 }
 
 footer {
-  background-color: #141414; /* Netflix dark background */
-  color: #b3b3b3;
+  background-color: #141414;
+  color: #808080;
   text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  border-top: 1px solid #333;
+  padding: 30px 0;
+  font-size: 0.85rem;
+  border-top: 1px solid #232323;
 }
 
 footer p {
@@ -62,63 +70,73 @@ footer p {
 }
 
 footer a {
-  color: #b3b3b3;
+  color: #808080;
   text-decoration: none;
   margin-left: 10px;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #e50914; /* Netflix red hover */
-  text-decoration: underline;
-}
-
-.list-bottom {
-    width: 25%;
-    margin-top: 10px;
+  color: #fff;
 }
 
 .link-bottom {
-    text-decoration: none;
-    color: #757575;
-    font-size: 0.8rem;
+  text-decoration: none;
+  color: #808080;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
 }
 
 .link-bottom:hover {
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .login {
-    margin: 0 auto;
-    width: 310px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    padding: 30px 70px 143px 70px;
+  margin: 0 auto;
+  width: 310px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  padding: 40px 70px 143px 70px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 .login h1 {
-    color: white;
-    padding-bottom: 10px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .input-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .input-text input {
-    width: 100%;
-    height: 45px;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    outline: transparent;
-    text-indent: 18px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(22, 22, 22, 0.9);
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #333;
+  outline: none;
+  text-indent: 18px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.input-text input:focus {
+  border-color: #fff;
+  background-color: rgba(22, 22, 22, 1);
 }
 
 .input-text input::placeholder {
-    font-size: 1rem;
-    color: #999;
+  font-size: 1rem;
+  color: #8c8c8c;
 }
 
 .signin-button,
@@ -128,69 +146,78 @@ footer a:hover {
   border: none;
   border-radius: 4px;
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 24px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .signin-button:hover,
 .signup-button:hover {
-  background-color: #f6121d;
-  transform: scale(1.02);
+  background-color: #f40612;
+}
+
+.signin-button:active,
+.signup-button:active {
+  transform: scale(0.98);
 }
 
 .remember-flex {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 0.85rem;
 }
 
 .color_text {
-    color: #b3b3b3;
+  color: #b3b3b3;
 }
 
 .signup-link {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .signup-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* ================= HOME PAGE (scoped) ================= */
-/* All rules scoped under .home-page to avoid affecting login page */
+/* ================= HOME PAGE ================= */
 .home-page {
-  --nav-height: 70px;
+  --nav-height: 68px;
   --accent-red: #e50914;
-  background-color: #0f0f0f;
+  background-color: #141414;
   color: #fff;
   min-height: 100vh;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
-/* ---------- NAVBAR ---------- */
+/* Navbar */
 .home-page .site-navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: var(--nav-height);
-  z-index: 999;
-  background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.35));
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, transparent 100%);
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 28px;
+  padding: 0 45px;
+  transition: background 0.3s ease;
 }
 
-/* inner container aligns items and keeps content centered */
+.home-page .site-navbar.scrolled {
+  background: rgba(20, 20, 20, 0.98);
+}
+
 .home-page .navbar-inner {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -199,201 +226,506 @@ footer a:hover {
   justify-content: space-between;
 }
 
-/* left: logo */
-.home-page .navbar-left { display: flex; align-items: center; gap: 12px; }
-.home-page .navbar-left .netflix-logo {
-  display: block;
-  width: 130px;        /* fixed width to avoid giant images */
-  max-width: 35%;      /* in case viewport is tiny */
-  height: auto;
-  object-fit: contain;
-  filter: none;        /* remove if you used invert earlier */
+.home-page .navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* center links */
+.home-page .navbar-left .netflix-logo {
+  display: block;
+  width: 130px;
+  max-width: 35%;
+  height: auto;
+  object-fit: contain;
+}
+
 .home-page .navbar-center {
   display: flex;
   gap: 18px;
   align-items: center;
   flex: 1;
   justify-content: flex-start;
-  margin-left: 8px;
+  margin-left: 20px;
 }
+
 .home-page .navbar-center a {
   color: #e5e5e5;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 400;
+  font-size: 0.9rem;
   padding: 4px 6px;
-  transition: color .18s ease, transform .12s ease;
-}
-.home-page .navbar-center a:hover {
-  color: #fff;
-  transform: translateY(-1px);
+  transition: color .2s ease;
+  letter-spacing: 0.2px;
 }
 
-/* right area: search, logout, profile */
+.home-page .navbar-center a:hover {
+  color: #fff;
+}
+
 .home-page .navbar-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   justify-content: flex-end;
 }
+
 .home-page .navbar-right .search-wrap {
   position: relative;
+  display: flex;
+  align-items: center;
 }
-.home-page input#search {
-  background: rgba(0,0,0,0.55);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.06);
-  padding: 7px 34px 7px 12px;
-  border-radius: 4px;
-  width: 180px;
-  outline: none;
-  transition: width .22s ease;
-}
-.home-page .search-wrap .fa-search {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255,255,255,0.65);
-  pointer-events: none;
-}
-.home-page input#search:focus { width: 230px; border-color: rgba(255,255,255,0.12); }
 
-/* profile image + logout */
-.home-page .logout-btn {
-  background: var(--accent-red);
+.home-page input#search {
+  background: rgba(0, 0, 0, 0.75);
   color: #fff;
-  border: none;
-  padding: 7px 12px;
+  border: 1px solid transparent;
+  padding: 7px 12px 7px 12px;
   border-radius: 4px;
-  font-weight: 700;
-  cursor: pointer;
+  width: 0px;
+  opacity: 0;
+  outline: none;
+  transition: width .3s cubic-bezier(0.4, 0, 0.2, 1), opacity .3s ease, border-color .2s ease;
 }
-.home-page .logout-btn:hover { background: #b90710; }
+
+.home-page input#search.active {
+  width: 230px;
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.home-page .search-icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.home-page .logout-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.home-page .logout-btn:hover {
+  border-color: #fff;
+}
 
 .home-page .profile-pic {
   background: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
   object-fit: cover;
-  border: 4px  3px solid rgba(255,255,255,0.06);
 }
 
-/* ---------- HERO ---------- */
+/* Hero */
 .home-page .hero {
-  margin-top: var(--nav-height); /* push below fixed navbar */
-  height: 70vh;
-  min-height: 420px;
+  margin-top: calc(var(--nav-height) * -1);
+  height: 85vh;
+  min-height: 500px;
   display: flex;
   align-items: flex-end;
   box-sizing: border-box;
-  padding: 40px 28px;
-  background-image:
-    linear-gradient(180deg, rgba(0,0,0,0.65) 20%, rgba(0,0,0,0.12) 60%),
-    url('../img/Stranger_Things__The_Experience.jpg');
+  padding: 0 45px 80px 45px;
+  background-image: linear-gradient(to right, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0.7) 30%, transparent 60%),
+    linear-gradient(to top, #141414 0%, rgba(20, 20, 20, 0.6) 30%, transparent 60%), url('../img/Stranger_Things__The_Experience.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
 .home-page .hero-content {
-  max-width: 900px;
+  max-width: 600px;
   color: #fff;
 }
+
 .home-page .hero-title {
-  font-size: clamp(28px, 4vw, 48px);
-  margin: 0 0 10px 0;
+  font-size: clamp(32px, 5vw, 56px);
+  margin: 0 0 16px 0;
   font-weight: 800;
-  letter-spacing: -0.6px;
+  letter-spacing: -1px;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
+
 .home-page .hero-description {
-  color: #e2e2e2;
-  margin: 0 0 22px 0;
-  line-height: 1.45;
-  font-size: clamp(14px, 1.6vw, 18px);
-  max-width: 66%;
+  color: #d2d2d2;
+  margin: 0 0 28px 0;
+  line-height: 1.6;
+  font-size: clamp(14px, 1.5vw, 18px);
+  max-width: 100%;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
 }
-.home-page .hero-buttons { display: flex; gap: 12px; align-items: center; }
+
+.home-page .hero-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .home-page .hero-buttons .btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 18px;
-  border-radius: 6px;
+  padding: 12px 24px;
+  border-radius: 4px;
   border: none;
   font-weight: 700;
+  font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.home-page .hero-buttons .play { background: #fff; color: #000; }
-.home-page .hero-buttons .info { background: rgba(109,109,110,0.7); color: #fff; }
 
-/* ---------- MOVIE ROWS ---------- */
-.home-page .rows { padding: 20px 0 60px; box-sizing: border-box; }
-.home-page .movie-section {
-  padding: 18px 28px;
-  box-sizing: border-box;
+.home-page .hero-buttons .play {
+  background: #fff;
+  color: #000;
 }
-.home-page .movie-section h2 {
-  margin: 8px 0 12px;
-  font-size: 1.15rem;
-  font-weight: 700;
+
+.home-page .hero-buttons .play:hover {
+  background: #e6e6e6;
+}
+
+.home-page .hero-buttons .info {
+  background: rgba(109, 109, 110, 0.7);
   color: #fff;
 }
+
+.home-page .hero-buttons .info:hover {
+  background: rgba(109, 109, 110, 0.4);
+}
+
+/* Movie Rows Setup */
+.home-page .rows {
+  padding: 0 0 60px;
+  box-sizing: border-box;
+}
+
+.home-page .movie-section {
+  padding: 10px 45px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.home-page .movie-section h2 {
+  margin: 0 0 14px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* Carousel Arrows */
+.home-page .movie-row-wrapper {
+  position: relative;
+}
+
+.home-page .carousel-btn {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 50px;
+  height: 80%;
+  background: rgba(20, 20, 20, 0.5);
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .carousel-btn.left {
+  left: -50px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-right: 12px;
+}
+
+.home-page .carousel-btn.right {
+  right: -50px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 12px;
+}
+
+.home-page .movie-row-wrapper:hover .carousel-btn {
+  opacity: 1;
+}
+
+.home-page .carousel-btn:hover {
+  background: rgba(20, 20, 20, 0.8);
+}
+
+/* Movie Row Scroll Setup */
 .home-page .movie-row {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   overflow-x: auto;
-  padding-bottom: 8px;
   scroll-behavior: smooth;
+  padding-top: 30px;
+  /* Gives the scaling card room to breathe upwards without clipping */
+  padding-bottom: 140px;
+  /* Gives the expanding description room to show without clipping */
+  margin-top: -20px;
+  /* Pulls the whole row up so the H2 title spacing stays normal */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-.home-page .movie-row::-webkit-scrollbar { height: 8px; }
-.home-page .movie-row::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
 
+.home-page .movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Base Movie Card */
 .home-page .movie {
   flex: 0 0 auto;
-  width: 180px;
-  transition: transform .18s ease, box-shadow .18s ease;
+  width: 200px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  z-index: 1;
+  background: #141414;
+  /* Blends seamlessly with the page background */
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0s 0.3s, box-shadow 0.3s ease, margin-bottom 0.3s ease;
 }
+
 .home-page .movie img {
   width: 100%;
-  height: 110px;
+  height: 115px;
   object-fit: cover;
-  border-radius: 6px;
   display: block;
-}
-.home-page .movie:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 18px 30px rgba(0,0,0,0.55);
+  border-radius: 6px 6px 0 0;
 }
 
-/* ---------- FOOTER ---------- */
+/* THE PREMIUM HOVER CARD (In-Flow Fix) */
+.home-page .movie-hover-info {
+  background: #181818;
+  border-radius: 0 0 6px 6px;
+  box-sizing: border-box;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s ease 0.1s, padding 0.3s ease;
+}
+
+/* The Active State */
+.home-page .movie.active {
+  z-index: 50;
+  transform: scale(1.08) translateY(-15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  background: #181818;
+  margin-bottom: -140px;
+  /* THE MAGIC TRICK: Overlaps the row below instead of pushing page down */
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0s 0s, box-shadow 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.home-page .movie.active img {
+  border-radius: 6px 6px 0 0;
+}
+
+.home-page .movie.active .movie-hover-info {
+  max-height: 200px;
+  /* Expands to show content */
+  opacity: 1;
+  padding: 15px;
+}
+
+/* Hover Info Inner Elements */
+.home-page .hover-top-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.home-page .hover-top-actions i {
+  background: rgba(42, 42, 42, 0.6);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.home-page .hover-top-actions i:first-child {
+  background: #fff;
+  color: #000;
+}
+
+.home-page .hover-top-actions i:first-child:hover {
+  background: #e6e6e6;
+}
+
+.home-page .hover-top-actions i:hover {
+  background: rgba(82, 82, 82, 0.8);
+}
+
+.home-page .hover-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: #bcbcbc;
+}
+
+.home-page .hover-meta .match {
+  color: #46d369;
+  font-weight: 700;
+}
+
+.home-page .hover-meta .rating,
+.home-page .hover-meta .duration {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 4px;
+  font-size: 0.7rem;
+}
+
+.home-page .hover-desc {
+  font-size: 0.8rem;
+  color: #d2d2d2;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Page Load Animations */
+.home-page .movie-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.home-page .rows.loaded .movie-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-page .rows.loaded .movie-section:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.home-page .rows.loaded .movie-section:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.home-page .rows.loaded .movie-section:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+/* Footer */
 .home-page .home-footer {
-  background: #050505;
-  color: #bdbdbd;
-  padding: 28px;
+  background: #141414;
+  color: #808080;
+  padding: 40px 45px;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #232323;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* Responsive */
 @media (max-width: 980px) {
-  .home-page .navbar-inner { padding: 0 12px; }
-  .home-page .navbar-center { display: none; } /* collapse nav links on small screens */
-  .home-page .navbar-left .netflix-logo { width: 110px; }
-  .home-page input#search { display: none; }
-  .home-page .hero { padding: 28px 18px; min-height: 360px; }
-  .home-page .hero-description { max-width: 100%; font-size: 14px; }
-  .home-page .movie { width: 150px; }
-  .home-page .movie img { height: 95px; }
+  .home-page .site-navbar {
+    padding: 0 20px;
+  }
+
+  .home-page .navbar-center {
+    display: none;
+  }
+
+  .home-page .navbar-left .netflix-logo {
+    width: 100px;
+  }
+
+  .home-page input#search.active {
+    width: 150px;
+  }
+
+  .home-page .hero {
+    padding: 0 20px 60px 20px;
+    min-height: 400px;
+    height: 70vh;
+  }
+
+  .home-page .movie-section {
+    padding: 10px 20px 20px;
+  }
+
+  .home-page .carousel-btn {
+    display: none;
+  }
+
+  /* Hide arrows on tablet */
+  .home-page .movie-row {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .home-page .movie {
+    width: 150px;
+  }
+
+  .home-page .movie img {
+    height: 90px;
+  }
+
+  .home-page .movie.active {
+    transform: scale(1.1) translateY(-10px);
+    margin-bottom: -100px;
+  }
+
+  /* Adjust overlap for smaller cards */
 }
 
 @media (max-width: 520px) {
-  .home-page .navbar-inner { gap: 8px; }
-  .home-page .navbar-left .netflix-logo { width: 95px; }
-  .home-page .hero-title { font-size: 20px; }
-  .home-page .movie { width: 120px; }
-  .home-page .movie img { height: 80px; }
+  .home-page .navbar-left .netflix-logo {
+    width: 85px;
+  }
+
+  .home-page .hero-title {
+    font-size: 24px;
+  }
+
+  .home-page .hero-buttons .btn {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+
+  .home-page .movie-row {
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
+
+  .home-page .movie {
+    width: 120px;
+  }
+
+  .home-page .movie img {
+    height: 75px;
+  }
+
+  .home-page .movie.active {
+    transform: scale(1.05) translateY(-5px);
+    margin-bottom: -80px;
+  }
+
+  .login {
+    padding: 30px 30px 100px 30px;
+    width: 85%;
+  }
 }
