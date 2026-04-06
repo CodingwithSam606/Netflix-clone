@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +10,6 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
-<!-- NOTE: body has class "home-page" to scope all home styles and avoid touching login styles -->
 <body class="home-page">
   <!-- Navbar -->
   <header class="site-navbar">
@@ -28,7 +28,7 @@
       <div class="navbar-right">
         <div class="search-wrap">
           <input type="text" id="search" placeholder="Search" aria-label="Search">
-          <i class="fas fa-search" aria-hidden="true"></i>
+          <i class="fas fa-search search-icon" aria-hidden="true"></i>
         </div>
         <button id="logout-btn" class="logout-btn">Logout</button>
         <img src="img/account.png" alt="User" class="profile-pic">
@@ -52,51 +52,275 @@
 
   <!-- Movie Rows -->
   <main class="rows">
+    <!-- Row 1 -->
     <section class="movie-section">
       <h2>Trending Now</h2>
-      <div class="movie-row">
-        <div class="movie"><img src="img/hollywood/img1.avif" alt="Movie 1"></div>
-        <div class="movie"><img src="img/hollywood/img10.jpg" alt="Movie 2"></div>
-        <div class="movie"><img src="img/hollywood/img12.jpg" alt="Movie 3"></div>
-        <div class="movie"><img src="img/hollywood/img13.jpg" alt="Movie 4"></div>
-        <div class="movie"><img src="img/hollywood/img14.jpg" alt="Movie 5"></div>
-        <div class="movie"><img src="img/hollywood/img7.jpg" alt="Movie 6"></div>
-        <div class="movie"><img src="img/hollywood/img8.jpg" alt="Movie 7"></div>
-        <div class="movie"><img src="img/hollywood/img9.jpg" alt="Movie 8"></div>
-        <div class="movie"><img src="img/trending/img9.jpeg" alt="Movie 9"></div>
-        <div class="movie"><img src="img/trending/img8.jpeg" alt="Movie 10"></div>
-        <div class="movie"><img src="img/trending/img7.webp" alt="Movie 11"></div>
+      <div class="movie-row-wrapper">
+        <button class="carousel-btn left"><i class="fas fa-chevron-left"></i></button>
+        <div class="movie-row">
+          <!-- Movie Card Template -->
+          <div class="movie">
+            <img src="img/hollywood/img1.avif" alt="Movie 1">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-chevron-down expand-icon"></i>
+              </div>
+              <div class="hover-meta">
+                <span class="match">98% Match</span>
+                <span class="rating">TV-MA</span>
+                <span class="duration">1h 35m</span>
+              </div>
+              <div class="hover-desc">
+                A group of kids uncover a dark secret in their small town.
+              </div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img10.jpg" alt="Movie 2">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">95% Match</span><span class="rating">PG-13</span></div>
+              <div class="hover-desc">An thrilling journey across time and space.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img12.jpg" alt="Movie 3">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">89% Match</span><span class="rating">R</span></div>
+              <div class="hover-desc">Secrets of the past come back to haunt them.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img13.jpg" alt="Movie 4">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">92% Match</span><span class="rating">TV-14</span></div>
+              <div class="hover-desc">A detective uncovers a massive conspiracy.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img14.jpg" alt="Movie 5">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">85% Match</span><span class="rating">TV-MA</span></div>
+              <div class="hover-desc">Love and loss in a dystopian future.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img7.jpg" alt="Movie 6">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">97% Match</span><span class="rating">R</span></div>
+              <div class="hover-desc">An epic battle to save the universe.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img8.jpg" alt="Movie 7">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">91% Match</span><span class="rating">PG-13</span></div>
+              <div class="hover-desc">Two rivals must work together to survive.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img9.jpg" alt="Movie 8">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">88% Match</span><span class="rating">TV-MA</span></div>
+              <div class="hover-desc">A psychological thriller that will keep you guessing.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img9.jpeg" alt="Movie 9">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">94% Match</span><span class="rating">R</span></div>
+              <div class="hover-desc">A heist gone wrong.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img8.jpeg" alt="Movie 10">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">90% Match</span><span class="rating">PG-13</span></div>
+              <div class="hover-desc">Finding hope in the darkest places.</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn right"><i class="fas fa-chevron-right"></i></button>
       </div>
     </section>
 
+    <!-- Row 2 -->
     <section class="movie-section">
       <h2>Continue Watching</h2>
-      <div class="movie-row">
-        <div class="movie"><img src="img/hollywood/img11.jpg" alt="Movie 6"></div>
-        <div class="movie"><img src="img/hollywood/img15.jpg" alt="Movie 7"></div>
-        <div class="movie"><img src="img/hollywood/img16.jpg" alt="Movie 8"></div>
-        <div class="movie"><img src="img/hollywood/img17.jpg" alt="Movie 9"></div>
-        <div class="movie"><img src="img/hollywood/img18.jpeg" alt="Movie 10"></div>
-        <div class="movie"><img src="img/trending/img1.jpeg" alt="Movie 1"></div>
-        <div class="movie"><img src="img/trending/img10.jpeg" alt="Movie 2"></div>
-        <div class="movie"><img src="img/trending/img11.jpg" alt="Movie 3"></div>
+      <div class="movie-row-wrapper">
+        <button class="carousel-btn left"><i class="fas fa-chevron-left"></i></button>
+        <div class="movie-row">
+          <div class="movie"><img src="img/hollywood/img11.jpg" alt="Movie 1">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">87% Match</span><span class="duration">2h 10m left</span>
+              </div>
+              <div class="hover-desc">You left off at episode 4.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img15.jpg" alt="Movie 2">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">92% Match</span><span class="duration">45m left</span></div>
+              <div class="hover-desc">The final season.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img16.jpg" alt="Movie 3">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">85% Match</span><span class="duration">1h 5m left</span></div>
+              <div class="hover-desc">An action-packed thriller.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img17.jpg" alt="Movie 4">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">99% Match</span><span class="duration">30m left</span></div>
+              <div class="hover-desc">A sci-fi masterpiece.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img18.jpeg" alt="Movie 5">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">96% Match</span><span class="duration">15m left</span></div>
+              <div class="hover-desc">Almost finished!</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img1.jpeg" alt="Movie 6">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">88% Match</span><span class="duration">1h 20m left</span>
+              </div>
+              <div class="hover-desc">Critically acclaimed drama.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img10.jpeg" alt="Movie 7">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">91% Match</span><span class="duration">50m left</span></div>
+              <div class="hover-desc">A twisted mystery.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img11.jpg" alt="Movie 8">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">84% Match</span><span class="duration">1h 12m left</span>
+              </div>
+              <div class="hover-desc">Heartwarming comedy.</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn right"><i class="fas fa-chevron-right"></i></button>
       </div>
     </section>
 
+    <!-- Row 3 -->
     <section class="movie-section">
       <h2>Top Picks for You</h2>
-      <div class="movie-row">
-        <div class="movie"><img src="img/hollywood/img2.jpg" alt="Movie 11"></div>
-        <div class="movie"><img src="img/hollywood/img3.jpg" alt="Movie 12"></div>
-        <div class="movie"><img src="img/hollywood/img4.png" alt="Movie 13"></div>
-        <div class="movie"><img src="img/hollywood/img5.jpg" alt="Movie 14"></div>
-        <div class="movie"><img src="img/hollywood/img6.jpg" alt="Movie 15"></div>
-        <div class="movie"><img src="img/trending/img12.jpg" alt="Movie 4"></div>
-        <div class="movie"><img src="img/trending/img15.webp" alt="Movie 5"></div>
-        <div class="movie"><img src="img/trending/img16.jpg" alt="Movie 6"></div>
-        <div class="movie"><img src="img/trending/img2.webp" alt="Movie 7"></div>
-        <div class="movie"><img src="img/trending/img3.webp" alt="Movie 8"></div>
-        <div class="movie"><img src="img/trending/img4.jpg" alt="Movie 9"></div>
+      <div class="movie-row-wrapper">
+        <button class="carousel-btn left"><i class="fas fa-chevron-left"></i></button>
+        <div class="movie-row">
+          <div class="movie"><img src="img/hollywood/img2.jpg" alt="Movie 1">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">97% Match</span><span class="rating">TV-MA</span></div>
+              <div class="hover-desc">Our top recommendation for you.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img3.jpg" alt="Movie 2">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">94% Match</span><span class="rating">R</span></div>
+              <div class="hover-desc">Based on true events.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img4.png" alt="Movie 3">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">89% Match</span><span class="rating">PG-13</span></div>
+              <div class="hover-desc">A visual spectacle.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img5.jpg" alt="Movie 4">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">92% Match</span><span class="rating">TV-14</span></div>
+              <div class="hover-desc">Unforgettable characters.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/hollywood/img6.jpg" alt="Movie 5">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">95% Match</span><span class="rating">R</span></div>
+              <div class="hover-desc">Edge of your seat suspense.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img12.jpg" alt="Movie 6">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">88% Match</span><span class="rating">TV-MA</span></div>
+              <div class="hover-desc">A mind-bending twist.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img15.webp" alt="Movie 7">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">90% Match</span><span class="rating">PG-13</span></div>
+              <div class="hover-desc">Fun for the whole family.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img16.jpg" alt="Movie 8">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">86% Match</span><span class="rating">R</span></div>
+              <div class="hover-desc">Dark and gritty.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img2.webp" alt="Movie 9">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">93% Match</span><span class="rating">TV-MA</span></div>
+              <div class="hover-desc">Critically acclaimed.</div>
+            </div>
+          </div>
+          <div class="movie"><img src="img/trending/img3.webp" alt="Movie 10">
+            <div class="movie-hover-info">
+              <div class="hover-top-actions"><i class="fas fa-play"></i><i class="fas fa-plus"></i><i
+                  class="fas fa-thumbs-up"></i><i class="fas fa-chevron-down expand-icon"></i></div>
+              <div class="hover-meta"><span class="match">91% Match</span><span class="rating">PG-13</span></div>
+              <div class="hover-desc">An epic adventure.</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn right"><i class="fas fa-chevron-right"></i></button>
       </div>
     </section>
   </main>
@@ -109,5 +333,5 @@
 
   <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
