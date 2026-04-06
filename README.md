@@ -47,9 +47,11 @@ CSS3 (Flexbox & Media Queries)
 JavaScript (Vanilla)
 
 🖼️ Images
-<img width="1330" height="691" alt="Screenshot (144)" src="https://github.com/user-attachments/assets/4ea80fc1-706b-4655-bfc0-d7376491d29c" />
+<img width="1350" height="673" alt="Screenshot (252)" src="https://github.com/user-attachments/assets/2351855a-6f83-42bd-9b86-9be0a0a71955" />
 
-<img width="1337" height="688" alt="Screenshot (145)" src="https://github.com/user-attachments/assets/d4570631-e03a-40a1-a182-f9ec900e61c4" />
+
+<img width="1343" height="683" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/06304906-6379-4f0e-b0a2-cbe0e82a769c" />
+
 
 
 
@@ -59,7 +61,7 @@ All images used in the /img folder are placeholders for demonstration purposes o
 
 Download or clone this repository:
 
-git clone [https://github.com/yourusername/netflix-clone.git](https://github.com/CodingwithSam606/Netflix-clone.git)
+git clone (https://github.com/CodingwithSam606/Netflix-clone.git)
 
 
 Open the folder in your code editor.
